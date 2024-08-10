@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+
+    <link rel="stylesheet" href="./dist/output.css">
+    <!-- Fonts -->
+    <link href="https://api.fontshare.com/v2/css?f[]=chillax@200,300,400,500,600,700&display=swap" rel="stylesheet"> 
+
+    <!-- icons -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+<body class="font-custom mx-auto">
+    
+  <header>
+    <div class="bg-black fixed text-centerpy-2 w-full top-0 z-50">
+        <p class="text-white text-center p-1">Sign up and get 20% off for all new arrivals collections</p>
+    </div>
+    <nav class="flex flex-row justify-between items-center w-11/12 m-auto mb-5 relative pt-6 pb-4 border-b-2">
+        <div class="nav-link flex-row ">
+            <div>
+                <ion-icon onclick="ontoggleMenu(this)" name="menu" class="text-xl cursor-pointer lg:hidden"></ion-icon>
+            </div>
+            <ul class=" hidden lg:flex flex-row  gap-4">
+                <li>
+                    <a href="#">Men</a>
+                </li>
+                <li>
+                    <a href="#">Women</a>
+                </li>
+                <li>
+                    <a href="#">Kids</a>
+                </li>
+                <li>
+                    <a href="#">Collection</a>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <h1 class="uppercase outline-text relative text-black  text-3xl font-bold">Ballamas</h1>
+        </div>
+        <div class="flex items-center">
+           
+           <div  class="lg:hidden text-xl items-center">
+            <ion-icon name="today-outline"></ion-icon>
+            <ion-icon name="search-outline"></ion-icon></a>
+           </div>
+            <ul class="nav-link hidden lg:flex  flex-row gap-4 text-center">
+                <li>
+                    <a href="#">Shop</a>
+                </li>
+                <li>
+                    <a href="#">About Us</a>
+                </li>
+                <li>
+                    <a href="#" class="flex flex-row items-center"><ion-icon name="person-outline"></ion-icon>Account</a>
+                </li>
+                <li>
+                    <a href="#">Cart(0)</a>
+                </li>
+                <li>
+                   <a href="" class="flex flex-row items-center"><ion-icon name="search-outline"></ion-icon>.</a>
+                </li>
+            </ul>
+        </div>
+        <!-- menu responsive -->
+       <div class="  absolute nav-links hidden  top-11  bg-white w-full p-5 ">
+        <ul class="lg:hidden  flex flex-col  h-20 items-center gap-3">
+            <li>
+                <a href="#">Men</a>
+            </li>
+            <li>
+                <a href="#">Women</a>
+            </li>
+            <li>
+                <a href="#">Kids</a>
+            </li>
+            <li>
+                <a href="#">Collection</a>
+            </li>
+            <li>
+                <a href="#">Shop</a>
+            </li>
+            <li>
+                <a href="#">About Us</a>
+            </li>
+            <li>
+                <a href="#" class="flex flex-row items-center"><ion-icon name="person-outline"></ion-icon>Account</a>
+            </li>
+            <li>
+                <a href="#">Cart(0)</a>
+            </li>
+        </ul>
+       </div>
+    </nav>
+     
+  </header>
+  <section class="">
+    <div class="text-white h-20 w-11/12 m-auto rounded-3xl bg-cover bg-center mb-3 text-center flex flex-col items-center justify-center gap-3" style="background-image: url('/assets/images/bg-first.png');">
+            
+            <p class="">We bring new fashion to the world</p>
+
+            <h1 class="lg:text-5xl text-2xl space-x-1 font-bold w-9/12">DISCOVER THE LATEST FASHION TRENDS HERE </h1>
+            <P class="w-7/12 text-sm">Discover a world of fashion with our meticulously curated outfits. Shop now to update your wardrobe with chic and stylish outfits.</P>
+            <div class="flex items-center"> 
+            <BUtton class="text-sm rounded-3xl p-2 text-black bg-white hover:bg-black hover:text-white ">Start shopping</BUtton>
+            <ion-icon class="bg-white text-sm text-black p-3 rounded-3xl hover:bg-black hover:text-white " name="arrow-forward-outline"></ion-icon>
+            </div>
+    </div>
+  </section>
+  <section class="mb-5 flex justify-center items-center min-h-screen  ">
+        <div class="flex flex-col items-center w-full max-w-screen-lg mx-auto px-4">
+            <div class="mb-3">
+                <p class="text-center sm:text-2xl text-sm w-full mx-auto font-bold">Discover the latest trends in summer fashion. Shop now and refresh your wordrobe with our stylish summer shirte.  </p>
+            </div>
+            <div>
+                <div class="arts mx-5  mb-4">
+                    <ul class=" flex justify-center items-center gap-4 mx-auto  ">
+                        <li>All 132</li>
+                        <li>Accessories 13</li>
+                        <li>Featured 67</li>
+                        <li>Unisex 52</li> </ul>
+                    </ul>
+                </div>
+                <div class=" photos grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 mx-auto  gap-3">
+                    <div class="flex flex-col   mb-3  mx-auto">
+                        <img class="w-full  rounded-3xl max-w-xs md:max-w-sm lg:max-w-md xl:max-w-lg mx-auto" src="/assets/images/all.png" alt="">
+                        <span class="absolute  top-0 left-0 bg-white text-black rounded-3xl text-sm mt-2 ml-2 p-2">GET OFF 20%</span>
+                        <p class="uppercase">Summer shirt</p>
+                        <span>$99</span>
+                    </div>
+                    <div class="flex flex-col mb-3  mx-auto">
+                        <img class="w-full max-w-xs md:max-w-sm lg:max-w-md xl:max-w-lg rounded-3xl " src="/assets/images/all.png" alt="">
+                        <span class="absolute top-0 left-0 bg-white text-black rounded-3xl text-sm mt-2 ml-2 p-2">GET OFF 20%</span>
+                        <p class="uppercase">Summer shirt</p>
+                        <span>$99</span>
+                    </div>
+                    <div class="flex flex-col mb-3  mx-auto">
+                        <img class="w-full  max-w-xs md:max-w-sm lg:max-w-md xl:max-w-lg rounded-3xl " src="/assets/images/all.png" alt="">
+                        <p class="uppercase">Summer shirt</p>
+                        <span>$99</span>
+                    </div>
+                    <div class="flex flex-col mb-3  mx-auto">
+                        <img class="w-full  max-w-xs md:max-w-sm lg:max-w-md xl:max-w-lg rounded-3xl " src="/assets/images/all.png" alt="">
+                        <p class="uppercase">Summer shirt</p>
+                        <span>$99</span>
+                    </div>
+                    <div class="flex flex-col mb-3  mx-auto">
+                        <img class="w-full  max-w-xs md:max-w-sm lg:max-w-md xl:max-w-lg rounded-3xl " src="/assets/images/all.png" alt="">
+                        <span class="absolute top-0 left-0 bg-white text-black rounded-3xl text-sm mt-2 ml-2 p-2">GET OFF 20%</span>
+                        <p class="uppercase">Summer shirt</p>
+                        <span>$99</span>
+                    </div>
+                    <div class="flex flex-col mb-3  mx-auto">
+                        <img class="w-full  max-w-xs md:max-w-sm lg:max-w-md xl:max-w-lg rounded-3xl " src="/assets/images/all.png" alt="">
+                        <p class="uppercase">Summer shirt</p>
+                        <span>$99</span>
+                    </div>
+                   
+                 
+                </div>
+            </div>
+            <div>
+                <button class="border border-black bg-white text-black text-sm rounded-3xl py-2 px-3 hover:bg-black hover:text-white">Vew More</button>
+            </div>
+        </div>    
+  </section>
+
+   <section class="w-8/12 collection flex flex-col  justify-center mx-auto mb-10">
+        <div class="mb-4 text-center">
+            <h1 class="uppercase text-2xl font-semibold ">Our collection</h1>
+            <p class="text-sm">Our latest collection, where classic and contemporary styles converge in perfect harmony.</p>
+        </div>
+        <div class="flex lg:flex-row flex-col  gap-4 ">
+            <div style="background-image: url('/assets/images/learn-more.png');" class="lg:w-1/3 w-full   h-19 rounded-3xl bg-cover bg-center">
+              
+                <div class="mt-17">
+                        <button class=" flex flex-row items-center uppercase mx-auto text-sm bg-white py-2 px-3 hover:text-white hover:bg-black rounded-3xl">learn more<ion-icon class="" name="arrow-forward-outline"></ion-icon></button>
+                </div>
+                  
+            </div>
+            <div style="background-image: url('assets/images/classic-men.png');" class="lg:w-2/3 w-full  h-19 rounded-3xl  bg-cover bg-center flex flex-col items-center justify-center text-center">
+               
+                <h1 class="text-5xl uppercase  text-white font-semibold">classic men</h1>
+                <p class="text-sm  text-white">We’re changing the way things get made</p>
+
+            </div>
+        </div> 
+    </section> 
+
+  <footer class="w-full bg-black  text-white space-y-4 lg:h-17 h-full flex flex-col lg:justify-center  lg:items-center mx-auto lg:p-0 p-5  " >
+    <div class="flex lg:justify-between  lg:gap-15 gap-5 lg:flex-row flex-col">
+            <div class="lg:w-[45%] w-[100%] space-y-4">
+                <h1 class="font-bold out-text uppercase text-3xl">Ballamas</h1>
+                <p class="text-sm">Subscribe to our newsletter  for upcoming products and best discount for all items</p>
+                <div class="flex flex-row items-center gap-1">
+                    <input type="email" name="mail" id="mail" placeholder="Your emails" class="outline-none bg-none border border-white rounded-3xl   w-2/3 py-2 px-3 bg-black">
+                    <button class="py-2 px-2 w-1/3 rounded-3xl text-black hover:text-white hover:bg-black bg-white border hover:border-white"> Subcribe</button>
+                </div>
+
+            </div>
+
+            <div class="flex flex-row  gap-6 lg:w-[45%] w-full" >
+                <div>
+                    <h3>Product</h3>
+                    <ul>
+                        <li>Jacket</li>
+                        <li>T-Shirt</li>
+                        <li>Jacket</li>
+                        <li>Shoes</li>
+                        <li>Sunglasses</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Categories</h3>
+                    <ul>
+                        <li>Man</li>
+                        <li>Woman</li>
+                        <li>Kids</li>
+                        <li>Gift</li>
+                        <li>New arrival</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Our social media</h3>
+                    <ul>
+                        <li>Instagram</li>
+                        <li>Facebook</li>
+                        <li>Youtube</li>
+                        <li>X</li>
+                    </ul>
+                </div>
+                
+            </div>
+
+    </div>
+    <div>
+        <p class="text-sm flex justify-center">&copyBALLAMAS 2024 by waris</p>
+   </div>
+
+
+  </footer>
+
+  
+
+
+
+
+
+  <script>
+    const navlinks=document.querySelector('.nav-links')
+    function ontoggleMenu(e){
+        e.name= e.name=== 'menu'? 'close':'menu'
+        navlinks.classList.toggle('hidden')
+    }
+
+  </script>
+    
+</body>
+</html>

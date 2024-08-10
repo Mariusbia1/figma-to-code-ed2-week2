@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://api.fontshare.com/v2/css?f=[nom-de-la-police]&display=swap');
+
+@layer base{
+    .nav-link  li a{
+        @apply text-sm
+    }
+    .nav-links li a{
+        @apply text-sm
+    }
+    nav .outline-text {
+        color: transparent;
+        -webkit-text-stroke: 1px black; /* Bordure noire de 1px */
+    }
+    .out-text {
+        color: transparent;
+        -webkit-text-stroke: 1px white /* Bordure noire de 1px */
+    }
+    p{
+        @apply text-sm
+    }
+   a{
+    @apply text-xl hover:text-gray-500
+   }
+   .arts  li{
+    @apply text-sm border p-1 rounded-3xl border-black hover:bg-black hover:text-white
+   }
+   footer h3{
+    @apply font-semibold text-sm
+   }
+   footer li{
+    @apply text-sm
+   }
+   .arts li{
+    @apply text-sm
+   }
+ 
+   
+}

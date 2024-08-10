@@ -36,6 +36,11 @@
    .arts li{
     @apply text-sm
    }
- 
+ .details li{
+    @apply text-lg py-1  px-2 text-center  border border-black rounded-3xl w-6 hover:text-white hover:bg-black
+ }
+ .roundcolor li{
+    @apply w-5 h-5 rounded-3xl border-none
+ }
    
 }

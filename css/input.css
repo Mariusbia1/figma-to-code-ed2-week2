@@ -42,5 +42,8 @@
  .roundcolor li{
     @apply w-5 h-5 rounded-3xl border-none
  }
+ .payment input{
+    @apply py-2 border rounded-3xl
+ }
    
 }

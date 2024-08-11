@@ -545,6 +545,13 @@ footer li {
   border-style: none;
 }
 
+.payment input {
+  border-radius: 1.5rem;
+  border-width: 1px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -736,6 +743,11 @@ footer li {
   height: 60px;
 }
 
+.size-3 {
+  width: 16px;
+  height: 16px;
+}
+
 .h-19 {
   height: 450px;
 }
@@ -785,8 +797,16 @@ footer li {
   width: 60%;
 }
 
+.w-4 {
+  width: 24px;
+}
+
 .w-5 {
   width: 32px;
+}
+
+.w-5\/6 {
+  width: 83.333333%;
 }
 
 .w-7\/12 {
@@ -1009,6 +1029,11 @@ footer li {
   padding-right: 24px;
 }
 
+.py-1 {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
 .py-2 {
   padding-top: 12px;
   padding-bottom: 12px;
@@ -1091,6 +1116,10 @@ footer li {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.underline {
+  text-decoration-line: underline;
+}
+
 .outline-none {
   outline: 2px solid transparent;
   outline-offset: 2px;
@@ -1119,6 +1148,10 @@ footer li {
   background-image: none;
 }
 
+.hover\:font-semibold:hover {
+  font-weight: 600;
+}
+
 .hover\:text-black:hover {
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
@@ -1139,6 +1172,10 @@ footer li {
     height: 75px;
   }
 
+  .sm\:w-1\/2 {
+    width: 50%;
+  }
+
   .sm\:w-18 {
     width: 400px;
   }
@@ -1151,8 +1188,16 @@ footer li {
     width: 60%;
   }
 
+  .sm\:w-full {
+    width: 100%;
+  }
+
   .sm\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .sm\:flex-row {
+    flex-direction: row;
   }
 
   .sm\:text-2xl {

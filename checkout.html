@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+
+    <link rel="stylesheet" href="./dist/output.css">
+    <!-- Fonts -->
+    <link href="https://api.fontshare.com/v2/css?f[]=chillax@200,300,400,500,600,700&display=swap" rel="stylesheet"> 
+
+    <!-- icons -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+<body class="font-custom">
+    
+  <header>
+    <div class="bg-black fixed w-full top-0 z-50">
+        <p class="text-white text-center p-1">Sign up and get 20% off for all new arrivals collections</p>
+    </div>
+    <nav class="flex flex-row justify-between items-center w-11/12 m-auto mb-5 relative pt-6 pb-4 border-b-2">
+        <div class="nav-link flex-row ">
+            <div>
+                <ion-icon onclick="ontoggleMenu(this)" name="menu" class="text-xl cursor-pointer lg:hidden"></ion-icon>
+            </div>
+            <ul class=" hidden lg:flex flex-row  gap-4">
+                <li>
+                    <a href="#">Men</a>
+                </li>
+                <li>
+                    <a href="#">Women</a>
+                </li>
+                <li>
+                    <a href="#">Kids</a>
+                </li>
+                <li>
+                    <a href="#">Collection</a>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <h1 class="uppercase outline-text relative text-black  text-3xl font-bold">Ballamas</h1>
+        </div>
+        <div class="flex items-center">
+           
+           <div  class="lg:hidden text-xl items-center">
+            <ion-icon name="today-outline"></ion-icon>
+            <ion-icon name="search-outline"></ion-icon></a>
+           </div>
+            <ul class="nav-link hidden lg:flex  flex-row gap-4 text-center">
+                <li>
+                    <a href="#">Shop</a>
+                </li>
+                <li>
+                    <a href="#">About Us</a>
+                </li>
+                <li>
+                    <a href="#" class="flex flex-row items-center"><ion-icon name="person-outline"></ion-icon>Account</a>
+                </li>
+                <li>
+                    <a href="#">Cart(0)</a>
+                </li>
+                <li>
+                   <a href="" class="flex flex-row items-center"><ion-icon name="search-outline"></ion-icon>.</a>
+                </li>
+            </ul>
+        </div>
+        <!-- menu responsive -->
+       <div class="  absolute nav-links hidden  top-11  bg-white w-full p-5 ">
+        <ul class="lg:hidden  flex flex-col  h-20 items-center gap-3">
+            <li>
+                <a href="#">Men</a>
+            </li>
+            <li>
+                <a href="#">Women</a>
+            </li>
+            <li>
+                <a href="#">Kids</a>
+            </li>
+            <li>
+                <a href="#">Collection</a>
+            </li>
+            <li>
+                <a href="#">Shop</a>
+            </li>
+            <li>
+                <a href="#">About Us</a>
+            </li>
+            <li>
+                <a href="#" class="flex flex-row items-center"><ion-icon name="person-outline"></ion-icon>Account</a>
+            </li>
+            <li>
+                <a href="#">Cart(0)</a>
+            </li>
+        </ul>
+       </div>
+    </nav>
+     
+  </header>
+
+
+  <section>
+    <div class="flex lg:flex-row flex-col  w-11/12 gap-4 mx-auto mb-5">
+        <div class=" flex flex-col lg:w-1/2 w-full mb-4">
+            
+                <h1 class="text-xl font-semibold">Checkaout</h1>
+                <h3 class="font-semibold">Your order</h3>
+                <p >By placing your order, you agree to Ballamas <span class="underline font-semibold"> Privacy</span> and <span class="underline font-semibold"> Privacy</span>.</p>
+
+            <div class="flex flex-row  justify-between mt-2 mb-2">
+                <div class="flex flex-row gap-1 ">
+                    <div>
+                        <img class="size-12 sm:size-16 rounded-xl" src="/assets/images/T-shirt-black.png" alt="">
+                    </div>
+                    <div class="flex flex-col  text-xs sm:text-sm">
+                        <h3>T-Shirt</h3>
+                        <span>Color:Green - size:Large</span>
+                    </div>
+                </div>
+                <div>
+                    <span class=" text-xs sm:text-sm">$174.00</span>
+                </div>
+            </div>
+
+            <!-- second -->
+            <div class="flex flex-row  justify-between mt-2 mb-2">
+                <div class="flex flex-row gap-1 ">
+                    <div>
+                        <img class="size-12 sm:size-16 rounded-xl" src="/assets/images/men-jacket.png" alt="">
+                    </div>
+                    <div class="flex flex-col  text-xs sm:text-sm">
+                        <h3>Men's Dri-FIT Golf Jacket</h3>
+                        <span>Color:Ocean - size:Large</span>
+                    </div>
+                </div>
+                <div>
+                    <span class=" text-xs sm:text-sm">$100.00</span>
+                </div>
+            </div>
+            
+            <!-- third -->
+            <div class="flex flex-row  justify-between mt-2 mb-2">
+                <div class="flex flex-row gap-1 ">
+                    <div>
+                        <img class="size-12 sm:size-16 rounded-xl" src="/assets/images/jordan.png" alt="">
+                    </div>
+                    <div class="flex flex-col text-xs sm:text-sm">
+                        <h3>Tatum 2 "Red Cement"</h3>
+                        <span>Size: 15</span>
+                    </div>
+                </div>
+                <div class="">
+                    <span class=" text-xs sm:text-sm">$250.00</span>
+                </div>
+            </div>
+
+            <h3>Discount Code</h3>
+            <div class="flex flex-row sm:w-2/3 gap-2 ">
+                <input class="px-2 sm:w-full  w-5/6  py-1  rounded-3xl border border-black" type="password" placeholder="Add discount code ">
+                <button class=" px-2  rounded-3xl text-white bg-black hover:bg-white hover:text-black border border-black" >Apply</button>
+            </div>
+           <span class="mb-3 text-sm">New customer?<a class=" text-sm underline hover:font-semibold" href="">Signup</a> to get better offer</span>
+           <div class="flex flex-col space-y-2">
+                <div class="flex flex-row justify-between">
+                    <span>Subtotal</span>
+                    <span>$524.00</span>
+                </div>
+                <div class="flex flex-row justify-between">
+                    <span>Discount</span>
+                    <span>$0</span>
+                </div><hr>
+                <div class="flex flex-row justify-between font-semibold">
+                    <span>Order total</span>
+                    <span>$524.00</span>
+                </div>
+           </div>
+           <div class="flex flex-col space-y-2">
+                <h3 class="font-semibold text-sm">Shippind method</h3>
+                <div class="flex text-sm border p-3 rounded-2xl flex-row justify-between">
+                    
+                    <div class="flex t flex-row gap-2">
+                        <input type="radio" name="shipping" id="Free shipping">
+                        <div class="flex flex-col">
+                            <span class="font-semibold text-sm">Free shipping</span>
+                            <span>7-30 business days</span>
+                        </div>
+                    </div>
+                    <span>$0</span>
+                </div>
+                <div class="flex text-sm border p-3 rounded-2xl flex-row justify-between">
+                   <div class="flex flex-row gap-2">
+                        <input type="radio" name="shipping" id="Regular shipping">
+                        <div class="flex flex-col">
+                            <span class="font-semibold text-sm">Regular shipping</span>
+                            <span>3-14 business days</span>
+                        </div>
+                   </div>
+                    <span>$7,50</span>
+                </div>
+                <div class="flex  text-sm border p-3 rounded-2xl flex-row justify-between">
+                    <div class="flex flex-row gap-2">
+                        <input type="radio" name="shipping" id="Express shipping">
+                        <div class="flex flex-col">
+                            <span class="font-semibold text-sm">Express shipping</span>
+                            <span>1-3 business days</span>
+                        </div>
+                    </div>
+                    <span>$22,50</span>
+                </div>
+               
+           </div>
+            
+        </div>
+
+        <!-- Deuxième partie -->
+        <div class="flex flex-col w-full lg:w-1/2  space-y-2 mx-auto">
+            <h3 class="font-semibold">Payment details</h3>
+            <p>Complete your purchase by providing your payment details.</p>
+
+            <div class="flex flex-col gap-2 ">
+                <h3 class="font-semibold">Shipping addres</h3>
+                <div class="payment flex sm:flex-row flex-col w-full gap-3">
+                    <div class="flex flex-col w-full ">
+                        <label for="first_name">First name</label>
+                        <input class=" px-2 border border-black" type="text" placeholder="Enter your first name ">
+                    </div>
+                    <div class="flex flex-col w-full ">
+                        <label for="first_name">Last name</label>
+                        <input class="px-2 border border-black" type="text" placeholder="Enter your last name ">
+                    </div>
+                </div>
+    
+                <div class="payment flex sm:flex-row flex-col w-full gap-3">
+                    <div class="flex flex-col w-full ">
+                        <label for="email">Email address</label>
+                        <input class="px-2 border border-black" type="email" placeholder="Enter your email addrress ">
+                    </div>
+                    <div class="flex flex-col w-full ">
+                        <label for="Phone">Phone number</label>
+                        <input class="px-2 border border-black" type="tel" placeholder="Enter your phone number ">
+                    </div>
+                </div>
+    
+                <div class="payment flexsm:flex-row flex-col w-full gap-3">
+                    <div class="flex flex-col w-full ">
+                        <label for="address">Address</label>
+                        <input class="px-2 border border-black" type="text" placeholder="Enter your address ">
+                    </div>
+                    <div class="flex flex-col w-full ">
+                        <label for="city">City</label>
+                        <input class="px-2 border border-black" type="text" placeholder="Enter your City ">
+                    </div>
+                </div>
+    
+                <div class="payment flex sm:flex-row flex-col w-full gap-3">
+                    <div class="flex flex-col w-full ">
+                        <label for="Region">Region</label>
+                        <input class="px-2 border border-black" type="text" placeholder="Enter your region ">
+                    </div>
+                    <div class="flex flex-col w-full ">
+                        <label  for="bp">Postal code</label>
+                        <input class="px-2 border border-black" type="text" placeholder="Enter your postal code ">
+                    </div>
+                </div>
+               <div>
+                <h3 class="text-sm">Select payment method</h3>
+                <div class="payment flex sm:flex-row flex-col w-full gap-3">
+                    <div class="sm:w-1/2 w-full border border-black flex flex-col p-3 rounded-xl">
+                        <ion-icon class="text-xl" name="card-outline"></ion-icon>
+                        <span>Debit/Credit Card</span>
+                    </div>
+                    <div class=" sm:w-1/2 w-full border border-black flex flex-col p-3 rounded-xl">
+                        <ion-icon class="text-xl" name="storefront-outline"></ion-icon>
+                        <span>Virtual account</span>
+                    </div>
+                </div>
+               </div>
+                <div class="w-full ">
+                    <input class="w-full py-2 rounded-3xl px-2 border border-black" type="text" placeholder="Card number ">
+                </div>
+                <div class="payment flex sm:flex-row flex-col w-full gap-3">
+                    <div class="flex flex-col w-full ">
+                        <input class="px-2 border border-black" type="text" placeholder="Expiration date ">
+                    </div>
+                    <div class="flex flex-col w-full ">
+                        <input class="px-2 border border-black" type="password" placeholder="Security code ">
+                    </div>
+                </div>
+                <div>
+                    <input class="size-3" type="checkbox" name="check" id="check"><label for="check">Use shipping address as billing address</label>
+                </div>
+                <div class="mx-auto py-2 rounded-3xl px-2 bg-black text-white hover:bg-white hover:text-black hover:border border-black  w-2/3">
+                    <button class="flex flex-row mx-auto items-center">Pay $524.00 <ion-icon class="w-4" name="arrow-forward-outline"></ion-icon></button>
+                </div>
+            
+            
+            </div>
+    
+              </div>
+        </div>
+    
+  </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+  
+
+
+
+
+
+
+
+
+  <footer class=" w-full bg-black  text-white space-y-4 lg:h-17 h-full flex flex-col lg:justify-center  lg:items-center mx-auto lg:p-0 p-2 " >
+        <div class="flex lg:justify-between  lg:gap-15 gap-5 lg:flex-row flex-col">
+            <div class="lg:w-[45%] w-11/12 space-y-4">
+                <h1 class="font-bold out-text uppercase text-3xl">Ballamas</h1>
+                <p class="text-sm">Subscribe to our newsletter  for upcoming products and best discount for all items</p>
+                 <div class="flex flex-row items-center gap-1">
+                    <input type="email" name="mail" id="mail" placeholder="Your emails" class="outline-none bg-none border border-white rounded-3xl   w-2/3 py-2 px-3 bg-black">
+                    <button class="py-2 px-2 w-1/3 rounded-3xl text-black hover:text-white hover:bg-black bg-white border hover:border-white"> Subcribe</button>
+                </div>
+            </div>
+            <div class="flex flex-row  justify-around lg:w-[45%] w-11/12 " >
+                <div>
+                    <h3>Product</h3>
+                    <ul>
+                        <li>Jacket</li>
+                        <li>T-Shirt</li>
+                        <li>Jacket</li>
+                        <li>Shoes</li>
+                        <li>Sunglasses</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Categories</h3>
+                    <ul>
+                        <li>Man</li>
+                        <li>Woman</li>
+                        <li>Kids</li>
+                        <li>Gift</li>
+                        <li>New arrival</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Our social media</h3>
+                    <ul>
+                        <li>Instagram</li>
+                        <li>Facebook</li>
+                        <li>Youtube</li>
+                        <li>X</li>
+                    </ul>
+                </div>
+                
+            </div>
+        </div>
+            <div>
+                <p class="text-sm flex justify-center">&copyBALLAMAS 2024 by waris</p>
+            </div>
+
+
+  </footer> 
+  
+
+  
+
+
+
+
+
+  <script>
+    const navlinks=document.querySelector('.nav-links')
+    function ontoggleMenu(e){
+        e.name= e.name=== 'menu'? 'close':'menu'
+        navlinks.classList.toggle('hidden')
+    }
+
+  </script>
+    
+</body>
+</html>
+
+ 

@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cart</title>
+
+    <link rel="stylesheet" href="./dist/output.css">
+    <!-- Fonts -->
+    <link href="https://api.fontshare.com/v2/css?f[]=chillax@200,300,400,500,600,700&display=swap" rel="stylesheet"> 
+
+    <!-- icons -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+<body class="font-custom">
+    
+  <header>
+    <div class="bg-black fixed w-full top-0 z-50">
+        <p class="text-white text-center p-1">Sign up and get 20% off for all new arrivals collections</p>
+    </div>
+    <nav class="flex flex-row justify-between items-center w-11/12 m-auto mb-5 relative pt-6 pb-4 border-b-2">
+        <div class="nav-link flex-row ">
+            <div>
+                <ion-icon onclick="ontoggleMenu(this)" name="menu" class="text-xl cursor-pointer lg:hidden"></ion-icon>
+            </div>
+            <ul class=" hidden lg:flex flex-row  gap-4">
+                <li>
+                    <a href="#">Men</a>
+                </li>
+                <li>
+                    <a href="#">Women</a>
+                </li>
+                <li>
+                    <a href="#">Kids</a>
+                </li>
+                <li>
+                    <a href="#">Collection</a>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <h1 class="uppercase outline-text relative text-black  text-3xl font-bold">Ballamas</h1>
+        </div>
+        <div class="flex items-center">
+           
+           <div  class="lg:hidden text-xl items-center">
+            <ion-icon name="today-outline"></ion-icon>
+            <ion-icon name="search-outline"></ion-icon></a>
+           </div>
+            <ul class="nav-link hidden lg:flex  flex-row gap-4 text-center">
+                <li>
+                    <a href="#">Shop</a>
+                </li>
+                <li>
+                    <a href="#">About Us</a>
+                </li>
+                <li>
+                    <a href="#" class="flex flex-row items-center"><ion-icon name="person-outline"></ion-icon>Account</a>
+                </li>
+                <li>
+                    <a href="#">Cart(0)</a>
+                </li>
+                <li>
+                   <a href="" class="flex flex-row items-center"><ion-icon name="search-outline"></ion-icon>.</a>
+                </li>
+            </ul>
+        </div>
+        <!-- menu responsive -->
+       <div class="  absolute nav-links hidden  top-11  bg-white w-full p-5 ">
+        <ul class="lg:hidden  flex flex-col  h-20 items-center gap-3">
+            <li>
+                <a href="#">Men</a>
+            </li>
+            <li>
+                <a href="#">Women</a>
+            </li>
+            <li>
+                <a href="#">Kids</a>
+            </li>
+            <li>
+                <a href="#">Collection</a>
+            </li>
+            <li>
+                <a href="#">Shop</a>
+            </li>
+            <li>
+                <a href="#">About Us</a>
+            </li>
+            <li>
+                <a href="#" class="flex flex-row items-center"><ion-icon name="person-outline"></ion-icon>Account</a>
+            </li>
+            <li>
+                <a href="#">Cart(0)</a>
+            </li>
+        </ul>
+       </div>
+    </nav>
+     
+  </header>
+
+
+<section>
+   <div class="flex lg:flex-row flex-col justify-between   w-11/12 gap-4 mx-auto">
+        <div class=" flex flex-col lg:w-2/3 mb-4">
+            <div class="flex flex-row justify-between items-center w-full">
+                <h1 class="text-xl font-semibold">Cart(3)</h1>
+                <span class="flex flex-row text-xl capitalize font-semibold justify-between items-center"><ion-icon name="trash-outline"></ion-icon>Clear Cart</span>
+            </div>
+            <div class="flex flex-row justify-between mb-2">
+                <div class="  text-xs sm:text-sm w-3/5">
+                    <h3>Product</h3>
+                </div>
+                <div class="flex flex-row justify-around  text-xs sm:text-sm w-2/5 ">
+                    <h3>Quantity</h3>
+                    <h3>Price</h3>
+                </div>
+            </div><hr>
+            <div class="flex flex-row  justify-between mt-2 mb-2">
+                <div class="flex flex-row gap-1 w-1/2 sm:w-3/5 ">
+                    <div>
+                        <img class="size-12 sm:size-16 rounded-xl" src="/assets/images/T-shirt-black.png" alt="">
+                    </div>
+                    <div class="flex flex-col  text-xs sm:text-sm">
+                        <h3>T-Shirt</h3>
+                        <span>Green - Large</span>
+                        <span>$87</span>
+                    </div>
+                </div>
+                <div class="flex flex-row items-center justify-around w-2/5 ">
+                    <div class="flex flex-row items-center gap-1 sm:w-2/3 ">
+                        <div class="flex flex-row items-center rounded-3xl  text-xs sm:text-sm gap-2 bg-gray-200 h-5 px-2">
+                            <ion-icon name="remove-circle-outline"></ion-icon>
+                            <span>2</span>
+                            <ion-icon name="add-circle-outline"></ion-icon>
+                        </div>
+                        <div class=" bg-gray-200 w-5 h-5 flex items-center justify-center  text-xs sm:text-sm rounded-3xl">
+                            <ion-icon name="trash-outline"></ion-icon>
+                        </div>
+                    </div>
+                    <div>
+                        <span class=" text-xs sm:text-sm">$174.00</span>
+                    </div>
+                </div>
+            </div><hr>
+            <!-- second -->
+            <div class="flex flex-row  justify-between mt-2 mb-2">
+                <div class="flex flex-row gap-1 w-1/2 sm:w-3/5 ">
+                    <div>
+                        <img class="size-12 sm:size-16 rounded-xl" src="/assets/images/men-jacket.png" alt="">
+                    </div>
+                    <div class="flex flex-col  text-xs sm:text-sm">
+                        <h3>Men's Dri-FIT Golf Jacket</h3>
+                        <span>Ocean - Large</span>
+                        <span>$100</span>
+                    </div>
+                </div>
+                <div class="flex flex-row items-center justify-around w-2/5 ">
+                    <div class="flex flex-row items-center gap-1  sm:w-2/3 ">
+                        <div class="flex flex-row items-center rounded-3xl  text-xs sm:text-sm gap-2 bg-gray-200 h-5 px-2">
+                            <ion-icon name="remove-circle-outline"></ion-icon>
+                            <span>1</span>
+                            <ion-icon name="add-circle-outline"></ion-icon>
+                        </div>
+                        <div class=" bg-gray-200 w-5 h-5 flex items-center justify-center  text-xs sm:text-sm rounded-3xl">
+                            <ion-icon name="trash-outline"></ion-icon>
+                        </div>
+                    </div>
+                    <div>
+                        <span class=" text-xs sm:text-sm">$100.00</span>
+                    </div>
+                </div>
+            </div><hr>
+            <!-- third -->
+            <div class="flex flex-row  justify-between mt-2 mb-2">
+                <div class="flex flex-row gap-1 w-1/2 sm:w-3/5 ">
+                    <div>
+                        <img class="size-12 sm:size-16 rounded-xl" src="/assets/images/jordan.png" alt="">
+                    </div>
+                    <div class="flex flex-col text-xs sm:text-sm">
+                        <h3>Tatum 2 "Red Cement"</h3>
+                        <span>Size: 15</span>
+                        <span>$125</span>
+                    </div>
+                </div>
+                <div class="flex flex-row items-center justify-around w-2/5 ">
+                    <div class="flex flex-row items-center gap-1 sm:w-2/3 ">
+                        <div class="flex flex-row items-center rounded-3xl  text-xs sm:text-sm gap-2 bg-gray-200 h-5 px-2">
+                            <ion-icon name="remove-circle-outline"></ion-icon>
+                            <span>2</span>
+                            <ion-icon name="add-circle-outline"></ion-icon>
+                        </div>
+                        <div class=" bg-gray-200 w-5 h-5 flex items-center justify-center  text-xs sm:text-sm rounded-3xl">
+                            <ion-icon name="trash-outline"></ion-icon>
+                        </div>
+                    </div>
+                    <div class="">
+                        <span class=" text-xs sm:text-sm">$250.00</span>
+                    </div>
+                </div>
+            </div><hr>
+        </div>
+        <div class=" border rounded-2xl p-5   flex flex-col w-full sm:w-18 lg:w-17 h-fit  space-y-2 mx-auto">
+            <h3 class="text-2xl font-semibold">Order Summary</h3>
+            <div class="flex flex-row justify-between">
+                <span>Subtotal</span>
+                <span>$524.00</span>
+            </div>
+            <div class="flex flex-row justify-between">
+                <span>Discount</span>
+                <span>$0</span>
+            </div><hr>
+            <div class="flex flex-row justify-between font-semibold">
+                <span>Order total</span>
+                <span>$524.00</span>
+            </div>
+            
+             <button class="text-white bg-black rounded-3xl p-2 w-full hover:bg-white hover:text-black hover:border">Checkout now </button>
+            
+        </div> 
+   </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<footer class=" w-full bg-black  text-white space-y-4 lg:h-17 h-full flex flex-col lg:justify-center  lg:items-center mx-auto lg:p-0 p-2 " >
+    <div class="flex lg:justify-between  lg:gap-15 gap-5 lg:flex-row flex-col">
+            <div class="lg:w-[45%] w-11/12 space-y-4">
+                <h1 class="font-bold out-text uppercase text-3xl">Ballamas</h1>
+                <p class="text-sm">Subscribe to our newsletter  for upcoming products and best discount for all items</p>
+                <div class="flex flex-row items-center gap-1">
+                    <input type="email" name="mail" id="mail" placeholder="Your emails" class="outline-none bg-none border border-white rounded-3xl   w-2/3 py-2 px-3 bg-black">
+                    <button class="py-2 px-2 w-1/3 rounded-3xl text-black hover:text-white hover:bg-black bg-white border hover:border-white"> Subcribe</button>
+                </div>
+
+            </div>
+
+            <div class="flex flex-row  justify-around lg:w-[45%] w-11/12 " >
+                <div>
+                    <h3>Product</h3>
+                    <ul>
+                        <li>Jacket</li>
+                        <li>T-Shirt</li>
+                        <li>Jacket</li>
+                        <li>Shoes</li>
+                        <li>Sunglasses</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Categories</h3>
+                    <ul>
+                        <li>Man</li>
+                        <li>Woman</li>
+                        <li>Kids</li>
+                        <li>Gift</li>
+                        <li>New arrival</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Our social media</h3>
+                    <ul>
+                        <li>Instagram</li>
+                        <li>Facebook</li>
+                        <li>Youtube</li>
+                        <li>X</li>
+                    </ul>
+                </div>
+                
+            </div>
+
+    </div>
+    <div>
+        <p class="text-sm flex justify-center">&copyBALLAMAS 2024 by waris</p>
+   </div>
+
+
+  </footer> 
+  
+
+  
+
+
+
+
+
+  <script>
+    const navlinks=document.querySelector('.nav-links')
+    function ontoggleMenu(e){
+        e.name= e.name=== 'menu'? 'close':'menu'
+        navlinks.classList.toggle('hidden')
+    }
+
+  </script>
+    
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 

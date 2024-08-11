@@ -483,7 +483,7 @@ a:hover {
   color: rgb(107 114 128 / var(--tw-text-opacity));
 }
 
-.arts  li {
+.arts  span {
   border-radius: 1.5rem;
   border-width: 1px;
   --tw-border-opacity: 1;
@@ -493,7 +493,7 @@ a:hover {
   line-height: 1.25rem;
 }
 
-.arts  li:hover {
+.arts  span:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
   --tw-text-opacity: 1;
@@ -511,7 +511,7 @@ footer li {
   line-height: 1.25rem;
 }
 
-.arts li {
+.arts {
   font-size: 0.875rem;
   line-height: 1.25rem;
 }
@@ -653,34 +653,6 @@ footer li {
   --tw-contain-style:  ;
 }
 
-.container {
-  width: 100%;
-}
-
-@media (min-width: 480px) {
-  .container {
-    max-width: 480px;
-  }
-}
-
-@media (min-width: 768px) {
-  .container {
-    max-width: 768px;
-  }
-}
-
-@media (min-width: 976px) {
-  .container {
-    max-width: 976px;
-  }
-}
-
-@media (min-width: 1440px) {
-  .container {
-    max-width: 1440px;
-  }
-}
-
 .fixed {
   position: fixed;
 }
@@ -719,6 +691,10 @@ footer li {
   margin-bottom: 100px;
 }
 
+.mb-2 {
+  margin-bottom: 12px;
+}
+
 .mb-3 {
   margin-bottom: 16px;
 }
@@ -755,12 +731,26 @@ footer li {
   display: none;
 }
 
+.size-12 {
+  width: 60px;
+  height: 60px;
+}
+
 .h-19 {
   height: 450px;
 }
 
 .h-20 {
   height: 500px;
+}
+
+.h-5 {
+  height: 32px;
+}
+
+.h-fit {
+  height: -moz-fit-content;
+  height: fit-content;
 }
 
 .h-full {
@@ -787,6 +777,18 @@ footer li {
   width: 66.666667%;
 }
 
+.w-2\/5 {
+  width: 40%;
+}
+
+.w-3\/5 {
+  width: 60%;
+}
+
+.w-5 {
+  width: 32px;
+}
+
 .w-7\/12 {
   width: 58.333333%;
 }
@@ -797,10 +799,6 @@ footer li {
 
 .w-9\/12 {
   width: 75%;
-}
-
-.w-\[100\%\] {
-  width: 100%;
 }
 
 .w-full {
@@ -831,6 +829,10 @@ footer li {
   flex-direction: column;
 }
 
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
 .items-center {
   align-items: center;
 }
@@ -841,6 +843,10 @@ footer li {
 
 .justify-between {
   justify-content: space-between;
+}
+
+.justify-around {
+  justify-content: space-around;
 }
 
 .gap-1 {
@@ -873,6 +879,12 @@ footer li {
   margin-left: calc(5px * calc(1 - var(--tw-space-x-reverse)));
 }
 
+.space-y-2 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(12px * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(12px * var(--tw-space-y-reverse));
+}
+
 .space-y-3 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
   margin-top: calc(16px * calc(1 - var(--tw-space-y-reverse)));
@@ -885,8 +897,16 @@ footer li {
   margin-bottom: calc(24px * var(--tw-space-y-reverse));
 }
 
+.rounded-2xl {
+  border-radius: 1rem;
+}
+
 .rounded-3xl {
   border-radius: 1.5rem;
+}
+
+.rounded-xl {
+  border-radius: 0.75rem;
 }
 
 .border {
@@ -915,6 +935,11 @@ footer li {
 .bg-emerald-900 {
   --tw-bg-opacity: 1;
   background-color: rgb(6 78 59 / var(--tw-bg-opacity));
+}
+
+.bg-gray-200 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(229 231 235 / var(--tw-bg-opacity));
 }
 
 .bg-gray-900 {
@@ -1035,6 +1060,11 @@ footer li {
   line-height: 1.75rem;
 }
 
+.text-xs {
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
 .font-bold {
   font-weight: 700;
 }
@@ -1045,6 +1075,10 @@ footer li {
 
 .uppercase {
   text-transform: uppercase;
+}
+
+.capitalize {
+  text-transform: capitalize;
 }
 
 .text-black {
@@ -1062,6 +1096,10 @@ footer li {
   outline-offset: 2px;
 }
 
+.hover\:border:hover {
+  border-width: 1px;
+}
+
 .hover\:border-white:hover {
   --tw-border-opacity: 1;
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
@@ -1070,6 +1108,20 @@ footer li {
 .hover\:bg-black:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-white:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-none:hover {
+  background-image: none;
+}
+
+.hover\:text-black:hover {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
 .hover\:text-white:hover {
@@ -1082,6 +1134,23 @@ footer li {
     margin-bottom: 16px;
   }
 
+  .sm\:size-16 {
+    width: 75px;
+    height: 75px;
+  }
+
+  .sm\:w-18 {
+    width: 400px;
+  }
+
+  .sm\:w-2\/3 {
+    width: 66.666667%;
+  }
+
+  .sm\:w-3\/5 {
+    width: 60%;
+  }
+
   .sm\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -1089,6 +1158,11 @@ footer li {
   .sm\:text-2xl {
     font-size: 1.5rem;
     line-height: 2rem;
+  }
+
+  .sm\:text-sm {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
   }
 }
 
@@ -1122,6 +1196,10 @@ footer li {
 
   .lg\:w-1\/3 {
     width: 33.333333%;
+  }
+
+  .lg\:w-17 {
+    width: 350px;
   }
 
   .lg\:w-2\/3 {

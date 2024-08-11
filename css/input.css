@@ -24,7 +24,7 @@
    a{
     @apply text-xl hover:text-gray-500
    }
-   .arts  li{
+   .arts  span{
     @apply text-sm border p-1 rounded-3xl border-black hover:bg-black hover:text-white
    }
    footer h3{
@@ -33,7 +33,7 @@
    footer li{
     @apply text-sm
    }
-   .arts li{
+   .arts {
     @apply text-sm
    }
  .details li{

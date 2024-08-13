@@ -462,6 +462,12 @@ nav .outline-text {
   /* Bordure noire de 1px */
 }
 
+.classic h1 {
+  color: transparent;
+  -webkit-text-stroke: 1px white;
+  /* Bordure noire de 1px */
+}
+
 .out-text {
   color: transparent;
   -webkit-text-stroke: 1px white
